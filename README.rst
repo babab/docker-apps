@@ -15,7 +15,7 @@ You can install wdocker with pip::
 bitlbee
 -------
 
-Initial build and run::
+::
 
    cd bitlbee
    wdocker init
@@ -24,7 +24,14 @@ Initial build and run::
    docker build -t bee .
    docker run -d -p 127.0.0.1:6667:6667 --name bee bee
 
-Start, stop::
+php7
+----
 
-   wdocker start
-   wdocker stop
+::
+
+   cd php7
+   wdocker init
+
+   # or
+   docker build -t php7 .
+   docker run -d -p 127.0.0.1:80:80 --name php7 php7
