@@ -12,7 +12,17 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-FROM debian:jessie
+#wd# name = bee
+#wd# ports = -p 127.0.0.1:6667:6667
+#wd# build = docker build -t {name} .
+#wd# run = docker run -d {ports} --name {name} {name}
+
+#wd# init: {build} ;; {run}
+#wd# start: docker start {name}
+#wd# stop: docker stop {name}
+#wd# attach: docker attach -it {name}
+
+FROM debian:latest
 MAINTAINER Benjamin Althues <benjamin@babab.nl>
 EXPOSE 6667
 RUN apt-get update
