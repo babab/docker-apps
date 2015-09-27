@@ -12,15 +12,21 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
+# wdocker vars:
+
+#wd# docker = docker
 #wd# name = bee
 #wd# ports = -p 127.0.0.1:6667:6667
-#wd# build = docker build -t {name} .
-#wd# run = docker run -d {ports} --name {name} {name}
 
+#wd# build = {docker} build -t {name} .
+#wd# run = {docker} run -d {ports} --name {name} {name}
+
+# wdocker commands:
+
+#wd# start: {docker} start {name}
+#wd# stop: {docker} stop {name}
+#wd# shell: {docker} exec -it {name} bash
 #wd# init: {build} ;; {run}
-#wd# start: docker start {name}
-#wd# stop: docker stop {name}
-#wd# attach: docker attach -it {name}
 
 FROM debian:latest
 MAINTAINER Benjamin Althues <benjamin@babab.nl>
