@@ -1,15 +1,30 @@
 docker-apps
 ==============================================================================
 
-A docker-compose environment with the following apps running on 127.0.0.1:
+A collection of various apps in Docker containers, meant to be run locally.
 
-- bitlbee on port 6667
+Each Dockerfile is configured with #wd# comments for managing images and
+containers with wdocker_.
 
-Dependencies:
+You can install wdocker with pip::
 
-- docker :: https://www.docker.com
-- docker-compose :: https://www.docker.com/docker-compose
+   sudo pip install wdocker
 
-Build, run/start::
+.. _wdocker: https://github.com/babab/wdocker
 
-   $ docker-compose up -d
+bitlbee
+-------
+
+Initial build and run::
+
+   cd bitlbee
+   wdocker init
+
+   # or
+   docker build -t bee .
+   docker run -d -p 127.0.0.1:6667:6667 --name bee bee
+
+Start, stop::
+
+   wdocker start
+   wdocker stop
