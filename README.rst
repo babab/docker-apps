@@ -35,3 +35,15 @@ php7
    # or
    docker build -t php7 .
    docker run -d -p 127.0.0.1:80:80 --name php7 php7
+
+mysql
+-----
+
+::
+
+   cd mysql
+   wdocker init
+
+   # or
+   docker build -t mysql .
+   docker run -d --name mysql mysql
