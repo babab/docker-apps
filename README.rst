@@ -47,3 +47,15 @@ mysql
    # or
    docker build -t mysql .
    docker run -d --name mysql mysql
+
+memcached
+---------
+
+::
+
+   cd memcached
+   wdocker init
+
+   # or
+   docker build -t memcached .
+   docker run -d --name memcached memcached
