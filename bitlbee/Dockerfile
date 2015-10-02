@@ -26,7 +26,7 @@
 #wd# start: {docker} start {name}
 #wd# stop: {docker} stop {name}
 #wd# shell: {docker} exec -it {name} bash
-#wd# init: {build} ;; {run}
+#wd# init: {build} && {run}
 
 FROM debian:latest
 MAINTAINER Benjamin Althues <benjamin@babab.nl>
