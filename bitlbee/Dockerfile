@@ -29,7 +29,7 @@
 #wd# init: {build} && {run}
 
 FROM debian:latest
-MAINTAINER Benjamin Althues <benjamin@babab.nl>
+MAINTAINER Jane Doe <user@example.org>
 EXPOSE 6667
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y bitlbee

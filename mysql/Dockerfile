@@ -29,4 +29,4 @@
 ##wd# init: {run}
 
 FROM mysql:5.5
-MAINTAINER Benjamin Althues <benjamin@babab.nl>
+MAINTAINER Jane Doe <user@example.org>

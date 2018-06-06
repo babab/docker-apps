@@ -29,4 +29,5 @@
 #wd# init: {build} && {run}
 
 FROM php:7-apache
+MAINTAINER John Doe <user@example.org>
 COPY src/ /var/www/html/

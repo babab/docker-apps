@@ -28,4 +28,4 @@
 #wd# init: {run}
 
 FROM memcached:latest
-MAINTAINER Benjamin Althues <benjamin@babab.nl>
+MAINTAINER John Doe <user@example.org>
